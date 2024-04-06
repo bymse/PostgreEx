@@ -1,6 +1,6 @@
 ﻿namespace PostgreEx.Core.Output.Explained;
 
-public class ExplainedOutput(ExplainedPlanNode planNode)
+public class ExplainedOutput(ExplainedPlan plan)
 {
-    public ExplainedPlanNode PlanNode { get; } = planNode;
+    public ExplainedPlan Plan { get; } = plan;
 }

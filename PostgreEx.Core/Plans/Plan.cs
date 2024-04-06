@@ -4,6 +4,6 @@ namespace PostgreEx.Core.Plans;
 
 public class Plan(PlanNode planNode, Plan[] children)
 {
-    public PlanNode PlanNode { get; } = planNode;
+    public PlanNode Node { get; } = planNode;
     public Plan[] Children { get; } = children;
 }
