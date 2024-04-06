@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreEx.Core", "PostgreEx.Core\PostgreEx.Core.csproj", "{E5BA3447-BD3E-44E2-A40C-99584B810828}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreEx.Application", "PostgreEx.Application\PostgreEx.Application.csproj", "{0AE179CA-A10E-4860-A17A-8DCF5AA43A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreEx.Infrastructure", "PostgreEx.Infrastructure\PostgreEx.Infrastructure.csproj", "{D4498558-A0BA-4CB5-9893-CED13FDB3763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{E5BA3447-BD3E-44E2-A40C-99584B810828}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5BA3447-BD3E-44E2-A40C-99584B810828}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5BA3447-BD3E-44E2-A40C-99584B810828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE179CA-A10E-4860-A17A-8DCF5AA43A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE179CA-A10E-4860-A17A-8DCF5AA43A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE179CA-A10E-4860-A17A-8DCF5AA43A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE179CA-A10E-4860-A17A-8DCF5AA43A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4498558-A0BA-4CB5-9893-CED13FDB3763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4498558-A0BA-4CB5-9893-CED13FDB3763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4498558-A0BA-4CB5-9893-CED13FDB3763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4498558-A0BA-4CB5-9893-CED13FDB3763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
