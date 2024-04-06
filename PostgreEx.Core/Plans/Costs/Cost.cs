@@ -1,12 +1,12 @@
-﻿namespace PostgreEx.Core.Costs;
+﻿namespace PostgreEx.Core.Plans.Costs;
 
-public record Cost(decimal Value)
+public record Cost(double Value)
 {
     public static bool operator >(Cost a, Cost b) => a.Value > b.Value;
     public static bool operator <(Cost a, Cost b) => a.Value < b.Value;
     public static bool operator >=(Cost a, Cost b) => a.Value >= b.Value;
     public static bool operator <=(Cost a, Cost b) => a.Value <= b.Value;
     
-    public static implicit operator decimal(Cost cost) => cost.Value;
-    public static implicit operator Cost(decimal cost) => new(cost);
+    public static implicit operator double(Cost cost) => cost.Value;
+    public static implicit operator Cost(double cost) => new(cost);
 }

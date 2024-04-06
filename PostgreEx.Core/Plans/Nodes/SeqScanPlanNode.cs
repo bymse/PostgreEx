@@ -1,4 +1,4 @@
-﻿using PostgreEx.Core.Costs;
+﻿using PostgreEx.Core.Plans.Costs;
 
 namespace PostgreEx.Core.Plans.Nodes;
 

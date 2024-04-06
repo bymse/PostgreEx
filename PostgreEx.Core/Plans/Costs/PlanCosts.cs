@@ -1,4 +1,4 @@
-﻿namespace PostgreEx.Core.Costs;
+﻿namespace PostgreEx.Core.Plans.Costs;
 
 public class PlanCosts
 {

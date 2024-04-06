@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using PostgreEx.Core.Costs;
+using PostgreEx.Core.Plans.Costs;
 
 namespace PostgreEx.Core.Explanation.Costs;
 
