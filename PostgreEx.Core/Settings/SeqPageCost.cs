@@ -1,6 +1,6 @@
 ﻿namespace PostgreEx.Core.Settings;
 
-public record SeqPageCost(int Value)
+public record SeqPageCost(decimal Value)
 {
-    public static implicit operator int(SeqPageCost seqPageCost) => seqPageCost.Value;
+    public static implicit operator decimal(SeqPageCost seqPageCost) => seqPageCost.Value;
 }
