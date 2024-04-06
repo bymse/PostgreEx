@@ -4,6 +4,7 @@ using PostgreEx.Application.Services;
 using PostgreEx.Core.Explanation.Costs;
 using PostgreEx.Core.Output.Explained;
 using PostgreEx.Core.Settings;
+using PostgreEx.Core.Statistics;
 using PostgreEx.Infrastructure.Explain;
 using PostgreEx.Infrastructure.Explain.Parser;
 using PostgreEx.Infrastructure.Postgres;
@@ -22,6 +23,7 @@ public static class ServicesRegistration
     private static void AddCore(IServiceCollection collection)
     {
         collection.AddSingleton<ICostSettingsProvider, NpgsqlCostSettingsProvider>();
+        collection.AddSingleton<IRelationStatistics, NpgsqlRelationStatistics>();
         collection.AddSingleton<CostsExplainer>();
         collection.AddSingleton<ExplainedOutputBuilder>();
     }
