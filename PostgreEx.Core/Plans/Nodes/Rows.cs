@@ -1,4 +1,4 @@
-﻿namespace PostgreEx.Core.Plans;
+﻿namespace PostgreEx.Core.Plans.Nodes;
 
 public record Rows(int Count)
 {
