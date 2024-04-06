@@ -5,7 +5,7 @@ using PostgreEx.Infrastructure.Postgres;
 
 namespace PostgreEx.Infrastructure.Explain;
 
-internal class NpgsqlExplainProvider(
+internal class NpgsqlExplainExecutor(
     JsonExplainOutputParser jsonExplainOutputParser,
     NpgsqlQueryExecutor queryExecutor
 ) : IExplainExecutor

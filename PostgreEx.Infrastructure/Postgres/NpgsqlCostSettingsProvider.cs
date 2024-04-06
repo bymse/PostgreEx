@@ -1,8 +1,10 @@
-﻿namespace PostgreEx.Infrastructure.Postgres;
+﻿using PostgreEx.Core.Settings;
 
-internal class NpgsqlCostSettingsProvider(NpgsqlQueryExecutor queryExecutor)
+namespace PostgreEx.Infrastructure.Postgres;
+
+internal class NpgsqlCostSettingsProvider(NpgsqlQueryExecutor queryExecutor) : ICostSettingsProvider
 {
-    public async Task<CostSettings> GetCostSettings()
+    public async Task<ICostSettings> GetSettings()
     {
         var (seqPageCost, cpuTupleCost) = (await queryExecutor
                 .Execute<double, double>("select current_setting('seq_page_cost'), current_setting('cpu_tuple_cost')")
